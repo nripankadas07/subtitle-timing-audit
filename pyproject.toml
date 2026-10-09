@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=77.0.3"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "subtitle-timing-audit"
+version = "0.1.0"
+description = "Offline SRT timing, overlap and reading-policy checks without caption text in reports."
+requires-python = ">=3.10"
+readme = "README.md"
+license = "MIT"
+authors = [{name = "Nripanka Das"}]
+dependencies = []
+[project.scripts]
+subtitle-timing-audit = "subtitle_timing_audit:main"
+[project.urls]
+Repository = "https://github.com/nripankadas07/subtitle-timing-audit"
+Issues = "https://github.com/nripankadas07/subtitle-timing-audit/issues"
+[tool.setuptools]
+py-modules = ["subtitle_timing_audit"]

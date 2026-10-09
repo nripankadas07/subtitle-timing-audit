@@ -1,0 +1,23 @@
+[
+  {
+    "args": [
+      "sample.srt",
+      "policy.json"
+    ],
+    "exit": 0
+  },
+  {
+    "args": [
+      "bad.srt",
+      "policy.json"
+    ],
+    "exit": 1
+  },
+  {
+    "args": [
+      "invalid.srt",
+      "policy.json"
+    ],
+    "exit": 2
+  }
+]

@@ -1,0 +1,68 @@
+test_bad_timestamp (test_contract.Tests.test_bad_timestamp) ... ok
+test_bom_crlf (test_contract.Tests.test_bom_crlf) ... ok
+test_duplicate_and_order (test_contract.Tests.test_duplicate_and_order) ... ok
+test_limit (test_contract.Tests.test_limit) ... ok
+test_line_length (test_contract.Tests.test_line_length) ... ok
+test_no_caption_in_report (test_contract.Tests.test_no_caption_in_report) ... ok
+test_nonadjacent_overlap (test_contract.Tests.test_nonadjacent_overlap) ... ok
+test_nonpositive (test_contract.Tests.test_nonpositive) ... ok
+test_numeric_last_line_preserved (test_contract.Tests.test_numeric_last_line_preserved) ... ok
+test_policy_fail_closed (test_contract.Tests.test_policy_fail_closed) ... ok
+test_reading_rate (test_contract.Tests.test_reading_rate) ... ok
+test_short_gap (test_contract.Tests.test_short_gap) ... ok
+test_touching_is_not_overlap (test_contract.Tests.test_touching_is_not_overlap) ... ok
+test_valid (test_contract.Tests.test_valid) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.010s
+
+OK
+{
+  "good": {
+    "cues": 2,
+    "policy": {
+      "min_duration_ms": 700,
+      "max_duration_ms": 7000,
+      "max_cps": 20,
+      "max_line_chars": 42,
+      "min_gap_ms": 0
+    },
+    "findings": [],
+    "complete": true
+  },
+  "violation": {
+    "cues": 2,
+    "policy": {
+      "min_duration_ms": 700,
+      "max_duration_ms": 7000,
+      "max_cps": 20,
+      "max_line_chars": 42,
+      "min_gap_ms": 0
+    },
+    "findings": [
+      {
+        "code": "overlap",
+        "cue": 2,
+        "other_cue": 1,
+        "milliseconds": 1000
+      }
+    ],
+    "complete": true
+  }
+}
+Processing /workspace/scratch/5d784ffbbfd3/launch-oct9/subtitle-timing-audit
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: subtitle-timing-audit
+  Building wheel for subtitle-timing-audit (pyproject.toml): started
+  Building wheel for subtitle-timing-audit (pyproject.toml): finished with status 'done'
+  Created wheel for subtitle-timing-audit: filename=subtitle_timing_audit-0.1.0-py3-none-any.whl size=5732 sha256=ce561d1b07a8d2fd6001d223ba711a0113b49d5911679c184ea152f902f748cc
+  Stored in directory: /root/.cache/pip/wheels/b9/8f/b5/8531f5170d31e79a7958dbefe0db0eb445766e9b0fa79446c1
+Successfully built subtitle-timing-audit
+Installing collected packages: subtitle-timing-audit
+Successfully installed subtitle-timing-audit-0.1.0
+PASS: fresh package installation and installed CLI good/findings/invalid cases outside source

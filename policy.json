@@ -1,0 +1,7 @@
+{
+  "min_duration_ms": 700,
+  "max_duration_ms": 7000,
+  "max_cps": 20,
+  "max_line_chars": 42,
+  "min_gap_ms": 0
+}
